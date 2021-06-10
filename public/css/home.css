@@ -1,0 +1,62 @@
+*{    /* con asterisco modifica todo en general */
+    margin: 0;
+}
+
+header{   /* como es algo propio, no necesita punto, ni hashtag */
+    height: 9em;   
+    width: 100%;   /* Va a ocupar todo el ancho de la pag */
+    background-color: #181818;
+    display: flex; /* se hace flexible: para poder modificarlo || en vez de estar uno arriba y otro abajo, este los ordena uno al lado del otro */
+    justify-content: space-between;  /* le da un orden a los elementos que esten adentro */
+    align-items: center;   /* agarra el tamaño del header (9em) y lo pone en el medio -- los alinea */
+    text-transform: uppercase;
+}
+
+.logo{
+    height: 8em;   /* un em equivale a 16px */
+    width: auto;
+}
+
+.titulo a, .navegacion ul{     /* abarca todo lo que esta dentro de titulo || especifico que quiero la a --- ADEMÁS, puedo poner punto y otra etiqueta */
+    display: flex;
+    align-items: center; /* HORIZONTAL pone elementos en el centro */
+}
+
+h1{
+    font-family: 'Do Hyeon', 'sans-serif';
+}
+
+ul li{ 
+    font-size: 2em;   /* padding: espacio dentro/interno del contenedor  |  margin es el espacio exterior */
+    padding: 0.3em;
+    list-style: none;  /* Le quito los puntitos a la lista */
+    font-family: 'Roboto', 'Sans-serif';
+}
+
+a:hover{
+    color: violet;
+}
+
+.navegacion ul{
+    flex-direction: row-reverse;
+}
+
+.etiquetaA{
+    text-decoration: none;   /* Le quita el subrayado a la lista */
+}
+
+main{
+    height: 30em;
+}
+
+footer{
+    height: auto;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* VERTICAL pone elementos en el centro */      /* el justify-content trabaja en el main-axis (eje principal) y el align content en el cross axis (eje secundario) */
+    align-items: center;
+    padding: 2em 0;
+    font-size: 1.5em;
+    text-align: center;
+}
